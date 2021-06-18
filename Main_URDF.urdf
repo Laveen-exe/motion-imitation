@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="DOG">
+<link name="map">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="Sphere">
+      <origin xyz="-0.004252 -0.070399 2.60958" rpy="1.65678 0 0 "/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/Sphere.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.004252 -0.070399 2.60958" rpy="1.65678 0 0 "/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/Sphere.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+      
+    
+  </link>
+  <link name="head">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="Sphere.001">
+      <origin xyz="0 0 0 " rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/head.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/head.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="tail">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="Sphere.002">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/tail.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/tail.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+
+
+  <link name="thigh_front_left">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="dog.010">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/thigh_front_left.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+     
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/thigh_front_left.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="thigh_front_right">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="dog.008">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/thigh_front_right.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+     
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/thigh_front_right.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+     
+    </collision>
+  </link>
+
+  <link name="calf_front_left">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="dog.012">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/calf_front_left.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/calf_front_left.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    
+    </collision>
+  </link>
+
+  <link name="calf_front_right">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="dog.005">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/calf_front_right.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+     
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/calf_front_right.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+     
+    </collision>
+  </link>
+
+  <link name="thigh_back_left">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="dog.013">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/thigh_back_left.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/thigh_back_left.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="thigh_back_right">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="dog.004">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/thigh_back_right.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+  
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/thigh_back_right.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="calf_back_left">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="dog.000">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/calf_back_left.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/calf_back_left.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+
+    </collision>
+   
+  </link>
+
+  <link name="calf_back_right">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual name="dog.006">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/calf_back_right.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+     
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://beginner_tutorials/meshes/calf_back_right.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+   
+  </link>
+ 
+  <link name="link_virtual_thigh_back_left">
+  </link> 
+
+  <link name="link_virtual_thigh_back_right">
+  </link> 
+  <link name="link_virtual_thigh_front_left">
+  </link> 
+
+  <link name="link_virtual_thigh_front_right">
+  </link> 
+
+  <joint name="calf_back_left_joint" type="revolute">
+    <origin xyz="0.245383 -1.563916 -0.638801" rpy="0 0 0"/>
+    <parent link="thigh_back_left"/>
+    <child link="calf_back_left"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+  
+  <joint name="calf_back_right_joint" type="revolute">
+    <origin xyz="-0.245383 -1.563916 -0.638801" rpy="0 0 0"/>
+    <parent link="thigh_back_right"/>
+    <child link="calf_back_right"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+  
+
+  <joint name="thigh_back_left_joint_x" type="revolute">
+    <axis xyz="1 0.0 0.0"/>
+    <origin xyz="0.388238 1.26716 2.70394" rpy="1.5708 0 0 "/>
+    <parent link="map"/>
+    <child link="link_virtual_thigh_back_left"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+  <joint name="thigh_back_left_joint_y" type="revolute">
+    <axis xyz="0.0 1 0.0"/>
+    <origin xyz="0 0 0" rpy="0 0 0 "/>
+    <parent link="link_virtual_thigh_back_left"/>
+    <child link="thigh_back_left"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+
+
+
+  <joint name="thigh_back_right_joint_x" type="revolute">
+    <axis xyz="1 0.0 0.0"/>
+    <origin xyz="-0.388238 1.26716 2.70394" rpy="1.5708 0 0"/>
+    <parent link="map"/>
+    <child link="link_virtual_thigh_back_right"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+  <joint name="thigh_back_right_joint_y" type="revolute">
+    <axis xyz="0.0 1 0.0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="link_virtual_thigh_back_right"/>
+    <child link="thigh_back_right"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+
+  <joint name="calf_front_left_joint" type="revolute">
+
+    <origin xyz="0.065476 -1.2613 0.175334" rpy="-0.000006 0 0"/>
+    <parent link="thigh_front_left"/>
+    <child link="calf_front_left"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+
+  <joint name="calf_front_right_joint" type="revolute">
+  
+    <origin xyz="-0.065476 -1.2613 0.175334" rpy="-0.000002 0 0"/>
+    <parent link="thigh_front_right"/>
+    <child link="calf_front_right"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+  
+  
+  <joint name="thigh_front_left_joint_x" type="revolute">
+    <axis xyz="1 0.0 0.0"/>
+    <origin xyz="0.550075 -1.36632 2.39333" rpy="1.5708 0 0"/>
+    <parent link="map"/>
+    <child link="link_virtual_thigh_front_left"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+  <joint name="thigh_front_left_joint_y" type="revolute">
+    <axis xyz="0.0 1 0.0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="link_virtual_thigh_front_left"/>
+    <child link="thigh_front_left"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+
+
+
+
+  <joint name="thigh_front_right_joint_x" type="revolute">
+    <axis xyz="1 0.0 0.0"/>
+    <origin xyz="-0.550075 -1.36632 2.39333" rpy="1.5708 0 0"/>
+    <parent link="map"/>
+    <child link="link_virtual_thigh_front_right"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+  <joint name="thigh_front_right_joint_y" type="revolute">
+    <axis xyz="0.0 1 0.0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="link_virtual_thigh_front_right"/>
+    <child link="thigh_front_right"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+
+  <joint name="head_joint" type="revolute">
+  
+    <origin xyz="0 -1.47294 2.63158" rpy="0.672543 0 0"/>
+    <parent link="map"/>
+    <child link="head"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+  <joint name="tail_joint" type="revolute">
+    <origin xyz="0 1.50854 2.81596" rpy="-0.95958 0 0"/>
+    <parent link="map"/>
+    <child link="tail"/>
+    <limit effort="0" velocity="0"/>
+  </joint>
+
+  <material name="None">
+    <color rgba="1 0 0 1.0"/>
+  </material>
+
+  <material name="None.001">
+    <color rgba="1 0 0 1.0"/>
+  </material>
+
+  <material name="None.003">
+    <color rgba="1 0 0 1.0"/>
+  </material>
+
+  <material name="None.004">
+    <color rgba="1 0 0 1.0"/>
+  </material>
+
+</robot>
